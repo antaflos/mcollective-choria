@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
 gem "nats", "0.8.0"
+gem "json-schema", "~> 2.6.0"
 
 group :development, :test do
+  gem "semantic_puppet"
   gem "json-schema-rspec"
   gem "mcollective-client"
   gem "rake"

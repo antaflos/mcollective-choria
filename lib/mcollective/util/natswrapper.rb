@@ -114,7 +114,7 @@ module MCollective
               end
 
               c.on_disconnect do |reason|
-                Log.warn("Disconnected from NATS: %s" % reason)
+                Log.debug("Disconnected from NATS: %s" % reason)
               end
 
               c.on_close do
